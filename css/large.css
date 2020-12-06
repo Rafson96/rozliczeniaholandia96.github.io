@@ -1,0 +1,58 @@
+nav {
+  background-color: transparent;
+}
+
+nav .nav-item {
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+nav .nav-item:hover {
+  color: red;
+}
+
+header {
+  background-image: url("/img/income-tax-491626.jpg");
+}
+
+header .header-text button {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+header .header-text button:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+header .header-social i {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+header .header-social i:hover {
+  color: tomato;
+}
+
+.aboutus .container .row {
+  margin-top: 10rem;
+}
+
+.aboutus .container .picture-aboutus {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/woman-2773007_1920.jpg");
+}
+
+.aboutus .container .description {
+  font-size: 1.6rem;
+  background-color: transparent;
+}
+
+.aboutus .container ul li {
+  line-height: 2.8rem;
+}
+/*# sourceMappingURL=large.css.map */

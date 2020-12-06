@@ -1,0 +1,260 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav .active {
+  color: #007bff !important;
+}
+
+nav .container {
+  max-width: 1140px;
+}
+
+nav .container img {
+  height: 40px;
+  width: auto;
+}
+
+nav i {
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 2.2rem;
+}
+
+nav .nav-item {
+  position: relative;
+  padding: 1rem 2rem 1rem 2rem !important;
+  text-align: center;
+}
+
+nav .nav-item::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: tomato;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
+nav .nav-item:hover::after {
+  width: 100%;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  
+  background-position: bottom;
+  background-size: cover;
+  z-index: 1;
+}
+
+header .shadow-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+header .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1.8rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+header p {
+  margin: 1.8rem 0 1.8rem 0;
+}
+
+header button {
+  position: relative;
+  height: 50px;
+  width: 230px;
+  margin-top: 1.8rem;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  letter-spacing: 4px;
+  letter-spacing: 4px;
+}
+
+header button::after, header button::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: tomato;
+}
+
+header span::after, header span::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: tomato;
+}
+
+header button::after {
+  bottom: 0px;
+  left: 0px;
+}
+
+header button::before {
+  top: 0;
+  right: 0;
+}
+
+header span::before {
+  bottom: 0px;
+  left: 0px;
+}
+
+header span::after {
+  top: 0;
+  right: 0px;
+}
+
+header .header-social {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+header i {
+  font-size: 2.3rem;
+  padding: 2rem;
+  color: #ffff;
+}
+
+.aboutus .container h1 {
+  border-top: 1px solid #3597ff;
+  border-bottom: 1px solid #3597ff;
+  text-align: center;
+  color: #3597ff;
+  text-transform: uppercase;
+}
+
+.aboutus .container .row {
+  margin-top: 5rem;
+}
+
+.aboutus .container .picture-aboutus {
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./img/woman-2773007_1920.jpg");
+}
+
+.aboutus .container .description {
+  background-color: #E9ECEF;
+}
+
+.aboutus .container ul li {
+  line-height: 2.5rem;
+}
+
+.services {
+  font-size: 15.4px;
+}
+
+.services .container h1 {
+  font-size: 3.5rem;
+  color: #428bca;
+  border-bottom: 1px solid #428bca;
+}
+
+.services .container p {
+  font-weight: bold;
+}
+
+.services .container .list-group a {
+  border: none;
+}
+
+.services .container .row h3 {
+  font-size: 3rem;
+}
+
+.services .container .row h4 {
+  font-size: 2.5rem;
+}
+
+.services .container .row p {
+  font-weight: normal;
+}
+
+.services .container .tab-pane ul {
+  -webkit-padding-start: 4rem;
+          padding-inline-start: 4rem;
+}
+
+.price-box .row .box {
+  margin: .6rem;
+  padding: .8rem;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.price-box .row p:nth-of-type(2) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price-box .row i {
+  padding: .5rem;
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer .muted a {
+  padding: 0 5px 0 5px;
+  border-right: 1px solid #999;
+}
+/*# sourceMappingURL=main.css.map */
